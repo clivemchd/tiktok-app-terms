@@ -3,34 +3,78 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TikTok Shorts Pipeline</title>
+  <title>TikTok Shorts Pipeline &mdash; Dashboard</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <h1>TikTok Shorts Pipeline</h1>
-  <p>Welcome to the TikTok Shorts Pipeline application.</p>
+  <nav class="sidebar">
+    <div class="sidebar-brand">Shorts Pipeline</div>
+    <ul class="sidebar-nav">
+      <li><a href="#" class="sidebar-nav-item active">Dashboard</a></li>
+      <li><a href="privacy-policy.html" class="sidebar-nav-item">Privacy Policy</a></li>
+      <li><a href="terms-of-service.html" class="sidebar-nav-item">Terms of Service</a></li>
+      <li><a href="https://github.com/clivemchd/tiktok-app-terms" class="sidebar-nav-item">Contact</a></li>
+    </ul>
+  </nav>
 
-  <h2>About the App</h2>
-  <p>The TikTok Shorts Pipeline is a personal-use application that generates and posts short-form video content directly to your TikTok account via the TikTok API.</p>
+  <main class="main-content">
+    <header class="top-bar">
+      <h1 class="page-title">Dashboard</h1>
+      <div class="profile">
+        <img
+          src="https://github.com/user-attachments/assets/df5db400-5f8d-4206-a28d-dcfcca0bb1cf"
+          alt="Profile picture of moneounchpan"
+          class="profile-avatar"
+        />
+        <span class="profile-name">moneounchpan</span>
+      </div>
+    </header>
 
-  <h2>How It Works</h2>
-  <ul>
-    <li>You authenticate with your TikTok account using OAuth.</li>
-    <li>The app uses your OAuth token to post video content on your behalf.</li>
-    <li>You retain full ownership of all content created and posted through the app.</li>
-  </ul>
+    <section class="card welcome-card">
+      <h2>Welcome back, moneounchpan</h2>
+      <p>The TikTok Shorts Pipeline is a personal-use application that generates and posts short-form video content directly to your TikTok account via the TikTok API.</p>
+    </section>
 
-  <h2>Your Data</h2>
-  <p>We only collect TikTok OAuth tokens for authentication and posting purposes. We do <strong>not</strong> collect, store, or share any other personal data. You can revoke access at any time through your TikTok account settings.</p>
+    <div class="card-grid">
+      <section class="card">
+        <h3>How It Works</h3>
+        <ul>
+          <li>Authenticate with your TikTok account using OAuth.</li>
+          <li>The app posts video content on your behalf.</li>
+          <li>You retain full ownership of all content.</li>
+        </ul>
+      </section>
 
-  <h2>Legal Documents</h2>
-  <p>Please review the following documents for full details:</p>
-  <ul>
-    <li><a href="privacy-policy.html">Privacy Policy</a> &mdash; How we handle your data</li>
-    <li><a href="terms-of-service.html">Terms of Service</a> &mdash; Rules and conditions for using the app</li>
-  </ul>
+      <section class="card">
+        <h3>Your Data</h3>
+        <p>We only collect TikTok OAuth tokens for authentication and posting. We do <strong>not</strong> collect, store, or share any other personal data. Revoke access any time via your TikTok settings.</p>
+      </section>
+    </div>
 
-  <h2>Contact</h2>
-  <p>If you have any questions, please open an issue in the <a href="https://github.com/clivemchd/tiktok-app-terms">GitHub repository</a>.</p>
+    <section class="card">
+      <h3>Legal Documents</h3>
+      <div class="doc-links">
+        <a href="privacy-policy.html" class="doc-link">
+          <span class="doc-link-icon">&#128274;</span>
+          <div>
+            <strong>Privacy Policy</strong>
+            <p>How we handle your data</p>
+          </div>
+        </a>
+        <a href="terms-of-service.html" class="doc-link">
+          <span class="doc-link-icon">&#128220;</span>
+          <div>
+            <strong>Terms of Service</strong>
+            <p>Rules and conditions for using the app</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="card">
+      <h3>Contact</h3>
+      <p>Have questions? Open an issue in the <a href="https://github.com/clivemchd/tiktok-app-terms" class="inline-link">GitHub repository</a>.</p>
+    </section>
+  </main>
 </body>
 </html>
