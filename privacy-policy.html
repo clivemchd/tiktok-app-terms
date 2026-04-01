@@ -3,42 +3,162 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy</title>
+  <title>Privacy Policy &mdash; Shorts Pipeline</title>
+  <meta name="description" content="Privacy Policy for the Shorts Pipeline application operated by Moneounchpan." />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <h1>Privacy Policy</h1>
-  <p><strong>Last Updated: April 1, 2026</strong></p>
 
-  <h2>Introduction</h2>
-  <p>This Privacy Policy describes how the TikTok Shorts Pipeline application ("the App") collects, uses, and protects your information.</p>
+  <!-- Navigation -->
+  <nav class="top-nav">
+    <a href="index.html" class="top-nav-brand">
+      <img src="favicon.png" alt="Shorts Pipeline" />
+      <span>Shorts Pipeline</span>
+    </a>
+    <ul class="top-nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="privacy-policy.html" class="active">Privacy Policy</a></li>
+      <li><a href="terms-of-service.html">Terms of Service</a></li>
+    </ul>
+  </nav>
 
-  <h2>Information We Collect</h2>
-  <ul>
-    <li><strong>TikTok OAuth Tokens</strong>: We collect TikTok OAuth tokens solely for the purpose of authenticating and posting content to your TikTok account on your behalf.</li>
-  </ul>
-  <p>We do <strong>not</strong> collect, store, or process any other personal data such as names, email addresses, browsing history, or device identifiers.</p>
+  <!-- Legal Content -->
+  <article class="legal-page">
+    <h1>Privacy Policy</h1>
+    <span class="last-updated">Last Updated: April 1, 2026</span>
 
-  <h2>How We Use Your Information</h2>
-  <p>The OAuth tokens we collect are used exclusively to:</p>
-  <ul>
-    <li>Authenticate your TikTok account</li>
-    <li>Post video content to your TikTok account as directed by you</li>
-  </ul>
+    <!-- 1. Introduction -->
+    <h2>1. Introduction</h2>
+    <p>This Privacy Policy describes how the Shorts Pipeline application (&ldquo;the App&rdquo;) handles data. The App is a <strong>personal-use automation tool</strong> built and operated exclusively by <strong>Moneounchpan</strong> (<a href="https://www.tiktok.com/@moneounchpan" target="_blank" rel="noopener">@moneounchpan</a> on TikTok).</p>
+    <div class="highlight-box">
+      <strong>Important:</strong> This application is not a public service. It has no registered users, does not accept sign-ups, and does not collect data from any third parties. The sole operator is also the sole user.
+    </div>
 
-  <h2>Data Sharing</h2>
-  <p>We do <strong>not</strong> sell, trade, or share your personal data or OAuth tokens with any third parties.</p>
+    <!-- 2. Information We Collect -->
+    <h2>2. Information We Collect</h2>
+    <p>Because this is a single-user, personal-use application, the only data processed is the operator's own authentication credentials:</p>
+    <ul>
+      <li><strong>TikTok OAuth Tokens</strong> &mdash; Used to authenticate and post video content to the operator's TikTok account via the <a href="https://developers.tiktok.com/doc/content-posting-api-get-started" target="_blank" rel="noopener">TikTok Content Posting API</a>.</li>
+      <li><strong>YouTube OAuth Tokens</strong> &mdash; Used to upload and schedule videos on the operator's YouTube channel via the YouTube Data API v3.</li>
+      <li><strong>Instagram/Meta Access Tokens</strong> &mdash; Used to cross-post videos as Reels on the operator's Instagram account via the Instagram Graph API.</li>
+      <li><strong>Google Cloud Service Credentials</strong> &mdash; Used for AI vision analysis (Gemini API) and text-to-speech narration (Google Cloud TTS).</li>
+      <li><strong>Cloudinary API Credentials</strong> &mdash; Used for temporary video hosting during Instagram upload processing.</li>
+    </ul>
+    <p><strong>We do not collect, store, or process any personal data from any other individuals.</strong> No names, email addresses, browsing history, device identifiers, IP addresses, location data, or any other personally identifiable information is collected from anyone.</p>
 
-  <h2>Data Storage and Security</h2>
-  <p>OAuth tokens are handled securely and are only retained for the duration necessary to perform the requested posting actions. We implement reasonable security measures to protect your information from unauthorized access.</p>
+    <!-- 3. Third-Party Tracking & Analytics -->
+    <h2>3. Third-Party Tracking and Analytics</h2>
+    <h3>3.1 Tracking Technologies</h3>
+    <p>This application and this website <strong>do not use any tracking technologies</strong> whatsoever. Specifically:</p>
+    <ul>
+      <li>No cookies (other than those set by the platforms themselves when you visit this website)</li>
+      <li>No analytics services (no Google Analytics, no TikTok Pixel, no Meta Pixel, or any equivalent)</li>
+      <li>No advertising SDKs or tracking pixels</li>
+      <li>No fingerprinting or device identification</li>
+      <li>No data collection for measurement, advertising, or any commercial purpose</li>
+    </ul>
 
-  <h2>Your Rights</h2>
-  <p>You may revoke the App's access to your TikTok account at any time through your TikTok account settings.</p>
+    <h3>3.2 Third-Party Services Used</h3>
+    <p>The App integrates with the following third-party services solely for content creation and publishing on the operator's own accounts. No user data is shared with these services beyond the operator's own authentication tokens and video content:</p>
+    <ul>
+      <li><strong>TikTok (ByteDance)</strong> &mdash; Video publishing via Content Posting API. Data sent: OAuth tokens, video files, post metadata (title, description). Subject to <a href="https://www.tiktok.com/legal/page/global/privacy-policy/en" target="_blank" rel="noopener">TikTok's Privacy Policy</a>.</li>
+      <li><strong>YouTube (Google)</strong> &mdash; Video uploading and scheduling via YouTube Data API v3. Data sent: OAuth tokens, video files, metadata. Subject to <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</li>
+      <li><strong>Instagram (Meta)</strong> &mdash; Video cross-posting as Reels via Instagram Graph API. Data sent: access tokens, video URLs, metadata. Subject to <a href="https://privacycenter.instagram.com/policy" target="_blank" rel="noopener">Instagram's Privacy Policy</a>.</li>
+      <li><strong>Google Cloud</strong> &mdash; AI analysis (Gemini API) and text-to-speech (Cloud TTS). Data sent: comic book page images for analysis, text for narration. Subject to <a href="https://cloud.google.com/terms/cloud-privacy-notice" target="_blank" rel="noopener">Google Cloud Privacy Notice</a>.</li>
+      <li><strong>Cloudinary</strong> &mdash; Temporary video hosting for Instagram upload processing. Data sent: video files (temporarily). Subject to <a href="https://cloudinary.com/privacy" target="_blank" rel="noopener">Cloudinary's Privacy Policy</a>.</li>
+    </ul>
 
-  <h2>Changes to This Policy</h2>
-  <p>We may update this Privacy Policy from time to time. Any changes will be reflected by an updated "Last Updated" date at the top of this page.</p>
+    <!-- 4. How We Use Information -->
+    <h2>4. How We Use Information</h2>
+    <p>All data processed by the App is used exclusively for the following purposes:</p>
+    <ul>
+      <li>Authenticating the operator's accounts on TikTok, YouTube, and Instagram</li>
+      <li>Publishing video content to the operator's own social media accounts</li>
+      <li>Generating AI-powered narration scripts and voice audio for video content</li>
+      <li>Temporarily hosting video files for cross-platform publishing</li>
+    </ul>
+    <p><strong>No data is used for advertising, measurement, profiling, or any purpose beyond the operator's personal content publishing.</strong></p>
 
-  <h2>Contact</h2>
-  <p>If you have any questions about this Privacy Policy, please open an issue in this repository.</p>
+    <!-- 5. Data Sharing -->
+    <h2>5. Data Sharing</h2>
+    <p>We do <strong>not</strong> sell, trade, rent, license, or otherwise share any data with third parties for their independent use. The only data transmissions that occur are:</p>
+    <ul>
+      <li>Sending video content and metadata to the platform APIs (TikTok, YouTube, Instagram) for publishing on the operator's own accounts</li>
+      <li>Sending text and images to Google Cloud APIs for AI processing</li>
+      <li>Sending video files to Cloudinary for temporary hosting</li>
+    </ul>
+
+    <!-- 6. Data Storage & Security -->
+    <h2>6. Data Storage and Security</h2>
+    <p>All authentication tokens and credentials are stored locally on the operator's own devices and servers. Specifically:</p>
+    <ul>
+      <li>OAuth tokens are stored in local JSON files on the operator's machine</li>
+      <li>API keys are stored in environment variables on the operator's server</li>
+      <li>No data is stored in any cloud database or third-party storage service</li>
+      <li>Video files uploaded to Cloudinary are temporary and automatically removed after processing</li>
+    </ul>
+    <p>Reasonable security measures are implemented to protect stored credentials, including restricted file permissions and secure server access.</p>
+
+    <!-- 7. Opt-Out & Data Control -->
+    <h2>7. Opt-Out and Data Control</h2>
+    <p>As the sole user of this application, the operator has full control over all data at all times. Additionally:</p>
+    <ul>
+      <li><strong>TikTok:</strong> The operator can revoke the App's access at any time via <a href="https://www.tiktok.com/setting/security" target="_blank" rel="noopener">TikTok Security Settings</a>. To manage ad personalization, visit <a href="https://www.tiktok.com/setting/personalization-and-data" target="_blank" rel="noopener">TikTok Personalization and Data Settings</a>.</li>
+      <li><strong>YouTube:</strong> Access can be revoked via <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">Google Account Permissions</a>.</li>
+      <li><strong>Instagram:</strong> Access can be revoked via Instagram account settings under Apps and Websites.</li>
+    </ul>
+
+    <!-- 8. TikTok-Specific Disclosures -->
+    <h2>8. TikTok-Specific Disclosures</h2>
+    <p>In compliance with TikTok's developer requirements, we disclose the following:</p>
+    <ul>
+      <li>This App uses the <strong>TikTok Content Posting API</strong> and <strong>Login Kit</strong> to authenticate the operator and publish video content to the operator's TikTok account.</li>
+      <li>The TikTok scopes used are: <code>user.info.basic</code>, <code>video.publish</code>, and <code>video.upload</code>.</li>
+      <li>No TikTok user data is collected, stored, or shared beyond the operator's own OAuth tokens.</li>
+      <li>This App complies with the <a href="https://www.tiktok.com/legal/page/global/terms-of-service/en" target="_blank" rel="noopener">TikTok Terms of Service</a>, <a href="https://developers.tiktok.com/doc/getting-started-terms-of-service/" target="_blank" rel="noopener">TikTok Developer Terms of Service</a>, and <a href="https://www.tiktok.com/legal/page/global/business-products-data-terms/en" target="_blank" rel="noopener">TikTok Business Products (Data) Terms</a>.</li>
+    </ul>
+    <p>Relevant TikTok policies for reference:</p>
+    <ul>
+      <li><a href="https://www.tiktok.com/legal/page/global/privacy-policy/en" target="_blank" rel="noopener">TikTok Privacy Policy</a></li>
+      <li><a href="https://www.tiktok.com/legal/page/global/cookie-policy/en" target="_blank" rel="noopener">TikTok Cookie Policy</a></li>
+      <li><a href="https://www.tiktok.com/legal/page/global/business-products-data-terms/en" target="_blank" rel="noopener">TikTok Business Products (Data) Terms</a></li>
+    </ul>
+
+    <!-- 9. Children's Privacy -->
+    <h2>9. Children's Privacy</h2>
+    <p>This application is a personal-use tool operated by a single adult. It is <strong>not directed at children</strong> and does not knowingly collect or process any data from individuals under the age of 13 (or the applicable age of digital consent in the relevant jurisdiction).</p>
+    <p>In compliance with TikTok's requirements: <strong>no data from users under 13 years of age is collected, stored, or processed by this application under any circumstances.</strong> If it is discovered that any such data has been inadvertently collected, it will be immediately deleted.</p>
+
+    <!-- 10. Your Rights -->
+    <h2>10. Your Rights</h2>
+    <p>As this application does not collect data from any third parties, data subject rights requests are not applicable in the traditional sense. However, if you believe this application has somehow processed your data, you have the right to:</p>
+    <ul>
+      <li>Request information about what data (if any) has been processed</li>
+      <li>Request deletion of any data that may have been inadvertently processed</li>
+      <li>Lodge a complaint with a supervisory authority</li>
+    </ul>
+    <p>To exercise any of these rights, contact us at the email address below.</p>
+
+    <!-- 11. Changes to This Policy -->
+    <h2>11. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time to reflect changes in the application or legal requirements. Any changes will be reflected by an updated &ldquo;Last Updated&rdquo; date at the top of this page. Significant changes will be noted on the <a href="index.html">home page</a>.</p>
+
+    <!-- 12. Contact -->
+    <h2>12. Contact</h2>
+    <p>If you have any questions about this Privacy Policy or believe your data has been processed by this application, please contact:</p>
+    <ul>
+      <li><strong>Email:</strong> <a href="mailto:clivemchd@gmail.com">clivemchd@gmail.com</a></li>
+      <li><strong>Website:</strong> <a href="https://shorts-tiktok.cliive.com">https://shorts-tiktok.cliive.com</a></li>
+      <li><strong>TikTok:</strong> <a href="https://www.tiktok.com/@moneounchpan" target="_blank" rel="noopener">@moneounchpan</a></li>
+    </ul>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    &copy; 2026 Moneounchpan. All rights reserved. &mdash; <a href="index.html">Home</a> &middot; <a href="terms-of-service.html">Terms of Service</a>
+  </footer>
+
 </body>
 </html>

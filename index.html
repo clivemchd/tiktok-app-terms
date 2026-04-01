@@ -3,78 +3,138 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TikTok Shorts Pipeline &mdash; Dashboard</title>
+  <title>Shorts Pipeline &mdash; Personal Content Automation by Moneounchpan</title>
+  <meta name="description" content="Shorts Pipeline is a personal-use automation tool by Moneounchpan that converts comic book pages into short-form video content with AI-generated narration." />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <nav class="sidebar">
-    <div class="sidebar-brand">Shorts Pipeline</div>
-    <ul class="sidebar-nav">
-      <li><a href="#" class="sidebar-nav-item active">Dashboard</a></li>
-      <li><a href="privacy-policy.html" class="sidebar-nav-item">Privacy Policy</a></li>
-      <li><a href="terms-of-service.html" class="sidebar-nav-item">Terms of Service</a></li>
-      <li><a href="https://github.com/clivemchd/tiktok-app-terms" class="sidebar-nav-item">Contact</a></li>
+
+  <!-- Navigation -->
+  <nav class="top-nav">
+    <a href="index.html" class="top-nav-brand">
+      <img src="favicon.png" alt="Shorts Pipeline" />
+      <span>Shorts Pipeline</span>
+    </a>
+    <ul class="top-nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="privacy-policy.html">Privacy Policy</a></li>
+      <li><a href="terms-of-service.html">Terms of Service</a></li>
+      <li><a href="https://www.tiktok.com/@moneounchpan" target="_blank" rel="noopener">@moneounchpan</a></li>
     </ul>
   </nav>
 
-  <main class="main-content">
-    <header class="top-bar">
-      <h1 class="page-title">Dashboard</h1>
-      <div class="profile">
-        <img
-          src="https://github.com/user-attachments/assets/df5db400-5f8d-4206-a28d-dcfcca0bb1cf"
-          alt="Profile picture of moneounchpan"
-          class="profile-avatar"
-        />
-        <span class="profile-name">moneounchpan</span>
-      </div>
-    </header>
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Shorts Pipeline</h1>
+    <p class="subtitle">A personal-use automation tool that converts comic book pages into short-form video content with AI-generated "Did You Know" narration &mdash; created and operated solely by <strong>Moneounchpan</strong>.</p>
+    <div class="badge">Personal Use Only &mdash; Single Operator &mdash; No Public Users</div>
+  </section>
 
-    <section class="card welcome-card">
-      <h2>Welcome back, moneounchpan</h2>
-      <p>The TikTok Shorts Pipeline is a personal-use application that generates and posts short-form video content directly to your TikTok account via the TikTok API.</p>
+  <!-- Main Content -->
+  <div class="container">
+
+    <!-- About -->
+    <section class="section">
+      <h2>About This Application</h2>
+      <p>Shorts Pipeline is a <strong>personal-use application</strong> built and operated exclusively by <strong>Moneounchpan</strong> (<a href="https://www.tiktok.com/@moneounchpan" target="_blank" rel="noopener">@moneounchpan</a> on TikTok). It is <strong>not a public service</strong>, does not have any registered users, and does not accept sign-ups. The sole operator is also the sole user.</p>
+      <p>The application automates the process of creating short-form video content from comic book pages and posting it to the operator's own social media accounts, including TikTok, YouTube, and Instagram.</p>
     </section>
 
-    <div class="card-grid">
-      <section class="card">
-        <h3>How It Works</h3>
-        <ul>
-          <li>Authenticate with your TikTok account using OAuth.</li>
-          <li>The app posts video content on your behalf.</li>
-          <li>You retain full ownership of all content.</li>
-        </ul>
-      </section>
+    <!-- How It Works -->
+    <section class="section">
+      <h2>How It Works</h2>
+      <div class="steps">
+        <div class="step">
+          <h4>Extract</h4>
+          <p>Comic book pages are extracted from PDF, CBZ, or CBR files.</p>
+        </div>
+        <div class="step">
+          <h4>Analyze &amp; Script</h4>
+          <p>AI vision models analyze the pages and generate "Did You Know" narration scripts.</p>
+        </div>
+        <div class="step">
+          <h4>Produce</h4>
+          <p>Text-to-speech narration is generated and composed with the comic panels into short-form video.</p>
+        </div>
+        <div class="step">
+          <h4>Publish</h4>
+          <p>Videos are posted to the operator's TikTok, YouTube, and Instagram accounts via their official APIs.</p>
+        </div>
+      </div>
+    </section>
 
-      <section class="card">
-        <h3>Your Data</h3>
-        <p>We only collect TikTok OAuth tokens for authentication and posting. We do <strong>not</strong> collect, store, or share any other personal data. Revoke access any time via your TikTok settings.</p>
-      </section>
-    </div>
+    <!-- Key Facts -->
+    <section class="section">
+      <h2>Key Facts</h2>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <span class="icon">&#128100;</span>
+          <h3>Single Operator</h3>
+          <p>This application is used exclusively by its creator, Moneounchpan. There are no other users, accounts, or sign-up mechanisms.</p>
+        </div>
+        <div class="feature-card">
+          <span class="icon">&#128274;</span>
+          <h3>No Data Collection</h3>
+          <p>No personal data is collected from any third parties. The only data processed are the operator's own API tokens for posting content.</p>
+        </div>
+        <div class="feature-card">
+          <span class="icon">&#127916;</span>
+          <h3>Original Content</h3>
+          <p>All videos are original creations featuring AI-generated narration about comic book facts and trivia.</p>
+        </div>
+        <div class="feature-card">
+          <span class="icon">&#9989;</span>
+          <h3>Platform Compliant</h3>
+          <p>Content is created in compliance with TikTok Community Guidelines, YouTube Terms of Service, and Instagram Terms of Use.</p>
+        </div>
+      </div>
+    </section>
 
-    <section class="card">
-      <h3>Legal Documents</h3>
+    <!-- Third-Party Services -->
+    <section class="section">
+      <h2>Third-Party Services Used</h2>
+      <p>This application integrates with the following third-party services exclusively for content creation and publishing on the operator's own accounts:</p>
+      <ul>
+        <li><strong>TikTok Content Posting API</strong> &mdash; Publishing videos to the operator's TikTok account (<a href="https://www.tiktok.com/@moneounchpan" target="_blank" rel="noopener">@moneounchpan</a>)</li>
+        <li><strong>YouTube Data API v3</strong> &mdash; Uploading and scheduling videos on the operator's YouTube channel</li>
+        <li><strong>Instagram Graph API</strong> &mdash; Cross-posting videos as Reels on the operator's Instagram account</li>
+        <li><strong>Google Cloud Text-to-Speech</strong> &mdash; Generating voice narration for videos</li>
+        <li><strong>Google Gemini API</strong> &mdash; AI vision analysis and script generation</li>
+        <li><strong>Cloudinary</strong> &mdash; Temporary video hosting for Instagram upload processing</li>
+      </ul>
+    </section>
+
+    <!-- Legal Documents -->
+    <section class="section">
+      <h2>Legal Documents</h2>
       <div class="doc-links">
         <a href="privacy-policy.html" class="doc-link">
-          <span class="doc-link-icon">&#128274;</span>
+          <span class="doc-icon">&#128274;</span>
           <div>
             <strong>Privacy Policy</strong>
-            <p>How we handle your data</p>
+            <p>How data is handled &mdash; including third-party service disclosure and opt-out information</p>
           </div>
         </a>
         <a href="terms-of-service.html" class="doc-link">
-          <span class="doc-link-icon">&#128220;</span>
+          <span class="doc-icon">&#128220;</span>
           <div>
             <strong>Terms of Service</strong>
-            <p>Rules and conditions for using the app</p>
+            <p>Rules, acceptable use, intellectual property, and liability information</p>
           </div>
         </a>
       </div>
     </section>
 
-    <section class="card">
-      <h3>Contact</h3>
-      <p>Have questions? Open an issue in the <a href="https://github.com/clivemchd/tiktok-app-terms" class="inline-link">GitHub repository</a>.</p>
-    </section>
-  </main>
+  </div>
+
+  <!-- Contact Footer -->
+  <footer class="contact-bar">
+    <span class="contact-email"><a href="mailto:clivemchd@gmail.com">clivemchd@gmail.com</a></span>
+    <p>Operated by Moneounchpan &mdash; <a href="https://www.tiktok.com/@moneounchpan" target="_blank" rel="noopener">@moneounchpan</a> on TikTok</p>
+    <p style="margin-top: 8px;">&copy; 2026 Moneounchpan. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
