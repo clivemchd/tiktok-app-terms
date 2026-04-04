@@ -439,18 +439,36 @@ a:hover {
 }
 
 /* Video Showcase */
+.section-subtitle {
+  color: #6b7280;
+  font-size: 0.95rem;
+  margin-top: -8px;
+  margin-bottom: 20px;
+}
+
 .video-showcase {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-  margin-top: 16px;
+  gap: 16px;
+  max-width: 640px;
+  margin: 0 auto;
 }
 
 .video-card {
-  border-radius: 12px;
+  position: relative;
+  border-radius: 10px;
   overflow: hidden;
-  background: #000;
+  background: #0f0f0f;
   aspect-ratio: 9 / 16;
+  max-height: 340px;
+  cursor: pointer;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.video-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.25);
 }
 
 .video-card video {
@@ -460,18 +478,58 @@ a:hover {
   display: block;
 }
 
+.video-card .play-btn {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.3);
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.video-card:hover .play-btn {
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.video-card .play-btn::after {
+  content: '';
+  display: block;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  /* Triangle via clip-path won't work here, use background SVG instead */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%231a1a2e'%3E%3Cpath d='M8 5v14l11-7z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px 24px;
+  background-color: rgba(255, 255, 255, 0.92);
+}
+
 @media (max-width: 768px) {
   .video-showcase {
-    grid-template-columns: repeat(2, 1fr);
+    max-width: 440px;
+    gap: 12px;
+  }
+
+  .video-card {
+    max-height: 280px;
   }
 }
 
 @media (max-width: 480px) {
   .video-showcase {
-    grid-template-columns: 1fr;
-    max-width: 300px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 100%;
+    gap: 10px;
+  }
+
+  .video-card {
+    max-height: 240px;
+    border-radius: 8px;
   }
 }
 
