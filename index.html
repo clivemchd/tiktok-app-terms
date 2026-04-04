@@ -89,32 +89,6 @@
       </div>
     </section>
 
-    <script>
-      document.querySelectorAll('.video-card .play-btn').forEach(function(btn) {
-        btn.addEventListener('click', function() {
-          var card = this.closest('.video-card');
-          var video = card.querySelector('video');
-          this.style.display = 'none';
-          video.controls = true;
-          video.play();
-        });
-      });
-      document.querySelectorAll('.video-card video').forEach(function(video) {
-        video.addEventListener('pause', function() {
-          if (this.currentTime > 0 && !this.ended) return;
-          var btn = this.closest('.video-card').querySelector('.play-btn');
-          btn.style.display = '';
-          this.controls = false;
-        });
-        video.addEventListener('ended', function() {
-          var btn = this.closest('.video-card').querySelector('.play-btn');
-          btn.style.display = '';
-          this.controls = false;
-          this.currentTime = 0;
-        });
-      });
-    </script>
-
     <!-- Key Facts -->
     <section class="section">
       <h2>Key Facts</h2>
@@ -185,6 +159,62 @@
     <p>Built by Moneounchpan &mdash; <a href="https://www.tiktok.com/@moneounchpan" target="_blank" rel="noopener">@moneounchpan</a> on TikTok</p>
     <p style="margin-top: 8px;">&copy; 2026 Moneounchpan. All rights reserved.</p>
   </footer>
+
+  <!-- Video Modal -->
+  <div id="video-modal" class="video-modal">
+    <div class="modal-backdrop"></div>
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close video">&times;</button>
+      <video id="modal-video" controls playsinline>
+        <source id="modal-source" src="" type="video/mp4" />
+      </video>
+    </div>
+  </div>
+
+  <script>
+    (function() {
+      var modal = document.getElementById('video-modal');
+      var modalVideo = document.getElementById('modal-video');
+      var modalSource = document.getElementById('modal-source');
+
+      function openModal(src) {
+        modalSource.src = src;
+        modalVideo.load();
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+        modalVideo.play();
+      }
+
+      function closeModal() {
+        modal.classList.remove('active');
+        modalVideo.pause();
+        modalVideo.currentTime = 0;
+        modalSource.src = '';
+        document.body.style.overflow = '';
+      }
+
+      document.querySelectorAll('.video-card .play-btn').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          var src = this.closest('.video-card').querySelector('source').src;
+          openModal(src);
+        });
+      });
+
+      modal.addEventListener('click', function(e) {
+        if (e.target === modal || e.target.classList.contains('modal-backdrop')) {
+          closeModal();
+        }
+      });
+
+      document.querySelector('.modal-close').addEventListener('click', closeModal);
+
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && modal.classList.contains('active')) {
+          closeModal();
+        }
+      });
+    })();
+  </script>
 
 </body>
 </html>
