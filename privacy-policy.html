@@ -30,7 +30,7 @@
   <article class="legal-page">
     <div class="legal-header">
       <h1>Privacy Policy</h1>
-      <span class="last-updated">Last Updated: April 1, 2026</span>
+      <span class="last-updated">Last Updated: April 4, 2026</span>
     </div>
 
     <!-- Table of Contents -->
@@ -46,7 +46,7 @@
         <li><a href="#pp-optout">Opt-Out &amp; Data Control</a></li>
         <li><a href="#pp-tiktok">TikTok-Specific Disclosures</a></li>
         <li><a href="#pp-children">Children's Privacy</a></li>
-        <li><a href="#pp-rights">Your Rights</a></li>
+        <li><a href="#pp-rights">Data Subject Rights</a></li>
         <li><a href="#pp-changes">Changes to This Policy</a></li>
         <li><a href="#pp-contact">Contact</a></li>
       </ol>
@@ -61,16 +61,17 @@
     <!-- 2. Information We Collect -->
     <section class="legal-section" id="pp-collect">
       <h2><span class="section-num">2</span> Information We Collect</h2>
-      <p>The App processes the following data to authenticate with third-party platforms and publish content:</p>
+      <p>The App processes the following data to authenticate with third-party platforms, publish content, and analyze performance:</p>
       <ul>
         <li><strong>TikTok OAuth Tokens</strong> &mdash; Used to authenticate and post video content to TikTok via the <a href="https://developers.tiktok.com/doc/content-posting-api-get-started" target="_blank" rel="noopener">TikTok Content Posting API</a>.</li>
         <li><strong>YouTube OAuth Tokens</strong> &mdash; Used to upload and schedule videos on YouTube via the YouTube Data API v3.</li>
         <li><strong>Instagram/Meta Access Tokens</strong> &mdash; Used to cross-post videos as Reels on Instagram via the Instagram Graph API.</li>
         <li><strong>Google Cloud Service Credentials</strong> &mdash; Used for AI vision analysis (Gemini API) and text-to-speech narration (Google Cloud TTS).</li>
         <li><strong>Cloudinary API Credentials</strong> &mdash; Used for temporary video hosting during Instagram upload processing.</li>
+        <li><strong>Video Performance Metrics</strong> &mdash; The App periodically retrieves performance data for our own published videos from YouTube and Instagram. This includes: view counts, like counts, comment counts, share counts, reach (unique accounts reached), and impressions. This data is stored locally and used exclusively to analyze and improve our content creation strategy. <strong>These metrics pertain only to our own published content &mdash; no data about other users or their viewing behavior is collected.</strong></li>
       </ul>
       <div class="legal-callout">
-        <strong>We do not collect, store, or process any personal data from any other individuals.</strong> No names, email addresses, browsing history, device identifiers, IP addresses, location data, or any other personally identifiable information is collected from anyone.
+        <strong>We do not collect, store, or process any personal data from any other individuals.</strong> No names, email addresses, browsing history, device identifiers, IP addresses, location data, or any other personally identifiable information is collected from anyone. The video performance metrics we collect are aggregate statistics provided by the platforms for our own content only.
       </div>
     </section>
 
@@ -92,12 +93,12 @@
       </ul>
 
       <h3>3.2 Third-Party Services Used</h3>
-      <p>The App integrates with the following third-party services for content creation and publishing. No user data is shared with these services beyond authentication tokens and video content:</p>
+      <p>The App integrates with the following third-party services for content creation, publishing, and performance analysis. No personal data from third-party individuals is shared with these services:</p>
       <ul>
         <li><strong>TikTok (ByteDance)</strong> &mdash; Video publishing via Content Posting API. Data sent: OAuth tokens, video files, post metadata. Subject to <a href="https://www.tiktok.com/legal/page/global/privacy-policy/en" target="_blank" rel="noopener">TikTok's Privacy Policy</a>.</li>
-        <li><strong>YouTube (Google)</strong> &mdash; Video uploading and scheduling via YouTube Data API v3. Data sent: OAuth tokens, video files, metadata. Subject to <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</li>
-        <li><strong>Instagram (Meta)</strong> &mdash; Video cross-posting as Reels via Instagram Graph API. Data sent: access tokens, video URLs, metadata. Subject to <a href="https://privacycenter.instagram.com/policy" target="_blank" rel="noopener">Instagram's Privacy Policy</a>.</li>
-        <li><strong>Google Cloud</strong> &mdash; AI analysis (Gemini API) and text-to-speech (Cloud TTS). Data sent: comic book page images for analysis, text for narration. Subject to <a href="https://cloud.google.com/terms/cloud-privacy-notice" target="_blank" rel="noopener">Google Cloud Privacy Notice</a>.</li>
+        <li><strong>YouTube (Google)</strong> &mdash; Video uploading, scheduling, and retrieval of video performance statistics via YouTube Data API v3. Data sent: OAuth tokens, video files, metadata. Data received: view counts, like counts, comment counts for our own videos. Subject to <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</li>
+        <li><strong>Instagram (Meta)</strong> &mdash; Video cross-posting as Reels and retrieval of video performance insights via Instagram Graph API. Data sent: access tokens, video URLs, metadata. Data received: views, likes, comments, shares, reach, impressions for our own content. Subject to <a href="https://privacycenter.instagram.com/policy" target="_blank" rel="noopener">Instagram's Privacy Policy</a>.</li>
+        <li><strong>Google Cloud</strong> &mdash; AI analysis (Gemini API) and text-to-speech (Cloud TTS). Data sent: comic book page images for analysis, text for narration, aggregated video performance statistics for content recommendations. Subject to <a href="https://cloud.google.com/terms/cloud-privacy-notice" target="_blank" rel="noopener">Google Cloud Privacy Notice</a>.</li>
         <li><strong>Cloudinary</strong> &mdash; Temporary video hosting for Instagram upload processing. Data sent: video files (temporarily). Subject to <a href="https://cloudinary.com/privacy" target="_blank" rel="noopener">Cloudinary's Privacy Policy</a>.</li>
       </ul>
     </section>
@@ -113,9 +114,11 @@
         <li>Publishing video content to social media platforms</li>
         <li>Generating AI-powered narration scripts and voice audio for video content</li>
         <li>Temporarily hosting video files for cross-platform publishing</li>
+        <li>Collecting and analyzing video performance metrics (views, likes, comments, shares, reach, impressions) for our own published content to evaluate and improve our content creation strategy</li>
+        <li>Generating AI-powered content recommendations based on aggregated performance data (via Google Gemini API)</li>
       </ul>
       <div class="legal-callout">
-        <strong>No data is used for advertising, measurement, profiling, or any purpose beyond content publishing.</strong>
+        <strong>No data is used for advertising, user profiling, or any purpose beyond content creation, publishing, and our own performance analysis.</strong>
       </div>
     </section>
 
@@ -127,6 +130,7 @@
         <li>Sending video content and metadata to the platform APIs (TikTok, YouTube, Instagram) for publishing</li>
         <li>Sending text and images to Google Cloud APIs for AI processing</li>
         <li>Sending video files to Cloudinary for temporary hosting</li>
+        <li>Sending aggregated, anonymized video performance statistics to Google Gemini API to generate content strategy recommendations (no personally identifiable information is included in these requests)</li>
       </ul>
     </section>
 
@@ -137,6 +141,7 @@
       <ul>
         <li>OAuth tokens are stored in local JSON files</li>
         <li>API keys are stored in environment variables</li>
+        <li>Video performance metrics are stored in a local SQLite database with a default retention period of 365 days, after which older records are automatically deleted</li>
         <li>No data is stored in any cloud database or third-party storage service</li>
         <li>Video files uploaded to Cloudinary are temporary and automatically removed after processing</li>
       </ul>
@@ -148,12 +153,13 @@
     <!-- 7. Opt-Out & Data Control -->
     <section class="legal-section" id="pp-optout">
       <h2><span class="section-num">7</span> Opt-Out and Data Control</h2>
-      <p>You have full control over your data at all times. You can revoke the App's access to any platform:</p>
+      <p>We maintain full control over all platform connections and can revoke the App&rsquo;s access at any time through each platform&rsquo;s settings:</p>
       <ul>
-        <li><strong>TikTok:</strong> Revoke access at any time via <a href="https://www.tiktok.com/setting/security" target="_blank" rel="noopener">TikTok Security Settings</a>. To manage ad personalization, visit <a href="https://www.tiktok.com/setting/personalization-and-data" target="_blank" rel="noopener">TikTok Personalization and Data Settings</a>.</li>
-        <li><strong>YouTube:</strong> Revoke access via <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">Google Account Permissions</a>.</li>
-        <li><strong>Instagram:</strong> Revoke access via Instagram account settings under Apps and Websites.</li>
+        <li><strong>TikTok:</strong> <a href="https://www.tiktok.com/setting/security" target="_blank" rel="noopener">TikTok Security Settings</a></li>
+        <li><strong>YouTube:</strong> <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">Google Account Permissions</a></li>
+        <li><strong>Instagram:</strong> Instagram account settings under Apps and Websites</li>
       </ul>
+      <p>Additionally, all locally stored data (SQLite database, OAuth tokens, credential files) can be deleted at any time by removing the relevant files from our infrastructure.</p>
     </section>
 
     <!-- 8. TikTok-Specific Disclosures -->
@@ -163,7 +169,7 @@
       <ul>
         <li>This App uses the <strong>TikTok Content Posting API</strong> and <strong>Login Kit</strong> to authenticate and publish video content to TikTok.</li>
         <li>The TikTok scopes used are: <code>user.info.basic</code>, <code>video.publish</code>, and <code>video.upload</code>.</li>
-        <li>No TikTok user data is collected, stored, or shared beyond the authentication tokens required for publishing.</li>
+        <li>No TikTok user data is collected, stored, or shared beyond the authentication tokens required for publishing. If TikTok video performance analytics are enabled in the future, only aggregate metrics for our own published content will be collected, consistent with how we handle YouTube and Instagram analytics (see Section 2).</li>
         <li>This App complies with the <a href="https://www.tiktok.com/legal/page/global/terms-of-service/en" target="_blank" rel="noopener">TikTok Terms of Service</a>, <a href="https://developers.tiktok.com/doc/getting-started-terms-of-service/" target="_blank" rel="noopener">TikTok Developer Terms of Service</a>, and <a href="https://www.tiktok.com/legal/page/global/business-products-data-terms/en" target="_blank" rel="noopener">TikTok Business Products (Data) Terms</a>.</li>
       </ul>
       <p>Relevant TikTok policies for reference:</p>
@@ -185,16 +191,16 @@
 
     <hr class="legal-divider" />
 
-    <!-- 10. Your Rights -->
+    <!-- 10. Data Subject Rights -->
     <section class="legal-section" id="pp-rights">
-      <h2><span class="section-num">10</span> Your Rights</h2>
-      <p>As this application does not collect data from any third parties, data subject rights requests are not applicable in the traditional sense. However, if you believe this application has somehow processed your data, you have the right to:</p>
+      <h2><span class="section-num">10</span> Data Subject Rights</h2>
+      <p>This application does not collect data from third parties. However, if any individual believes their data has been inadvertently processed, they may:</p>
       <ul>
         <li>Request information about what data (if any) has been processed</li>
         <li>Request deletion of any data that may have been inadvertently processed</li>
         <li>Lodge a complaint with a supervisory authority</li>
       </ul>
-      <p>To exercise any of these rights, contact us at the email address below.</p>
+      <p>Any such requests can be directed to the contact information below.</p>
     </section>
 
     <!-- 11. Changes to This Policy -->
