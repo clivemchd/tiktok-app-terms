@@ -1,4 +1,4 @@
-# Shorts Pipeline — TikTok App Terms Site
+# Shorts Pipeline
 
 Legal and informational website for the **Shorts Pipeline** TikTok application, operated by **Moneounchpan** ([@moneounchpan](https://www.tiktok.com/@moneounchpan)).
 
