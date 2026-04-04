@@ -2,15 +2,15 @@
 
 Legal and informational website for the **Shorts Pipeline** TikTok application, operated by **Moneounchpan** ([@moneounchpan](https://www.tiktok.com/@moneounchpan)).
 
-Hosted at **[shorts-tiktok.cliive.com](https://shorts-tiktok.cliive.com)** via GitHub Pages.
+Hosted at **[shorts-pipeline.cliive.com](https://shorts-pipeline.cliive.com)** via GitHub Pages.
 
 ## Pages
 
 | Page | URL | Description |
 |------|-----|-------------|
-| Landing Page | [/](https://shorts-tiktok.cliive.com/) | Overview of the application, how it works, key facts |
-| Privacy Policy | [/privacy-policy.html](https://shorts-tiktok.cliive.com/privacy-policy.html) | Data handling, third-party disclosures, TikTok-specific compliance |
-| Terms of Service | [/terms-of-service.html](https://shorts-tiktok.cliive.com/terms-of-service.html) | Acceptable use, IP, liability, platform guideline references |
+| Landing Page | [/](https://shorts-pipeline.cliive.com/) | Overview of the application, how it works, key facts |
+| Privacy Policy | [/privacy-policy.html](https://shorts-pipeline.cliive.com/privacy-policy.html) | Data handling, third-party disclosures, TikTok-specific compliance |
+| Terms of Service | [/terms-of-service.html](https://shorts-pipeline.cliive.com/terms-of-service.html) | Acceptable use, IP, liability, platform guideline references |
 
 ## Purpose
 
